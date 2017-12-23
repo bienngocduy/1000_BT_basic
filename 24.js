@@ -1,10 +1,11 @@
+//liet ke uoc so le
 function bai24(n){
     let i;
-    for(let i = 1; i<=n; i++){
+    for(i = 1; i<=n; i++){
       if ( (n%i==0) & (i%2) != 0) {
-          //console.log(i)
+         console.log(i)
       }
     }
-    return i;
+   return i;
 }
-   console.log(bai24(6)) 
+   bai24(7) 
