@@ -20,4 +20,4 @@ function bai17(x, n) {
 
     return S;
 }
-console.log(bai17(2,3))
+console.log(bai17(2, 3))

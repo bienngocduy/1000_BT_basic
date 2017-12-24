@@ -8,15 +8,15 @@ function bai19(x, n) {
     while (n < 1);
 
     S = 1;
-	N = 1;
-	i = 1;
+    N = 1;
+    i = 1;
 
     while (i <= n) {
         T = Math.pow(x, (2 * i + 1));
-		M = i * 2 + 1;
-		N = N * M * (M - 1);
-		S = S + x + T/N;
-		i++;
+        M = i * 2 + 1;
+        N = N * M * (M - 1);
+        S = S + x + T / N;
+        i++;
     }
 
     return S;
