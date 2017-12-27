@@ -16,7 +16,7 @@ function bai33_0(n) {
 }
 
 function bai33_1(n) {
-    if (n <= 0) {
+    if (n < 1) {
         return 0;
     }
 
