@@ -1,5 +1,5 @@
 //tim gia tri lon nhat trong mang 1 chieu 
-let a= [];
+let a = [];
 function bai122(a) {
     max_value = a[0];
     for (let i = 0; i <= a.length; i++) {
@@ -9,4 +9,4 @@ function bai122(a) {
     }
     return max_value;
 }
-console.log(bai122([1,2,3,4, 100]))
+console.log(bai122([1, 2, 3, 4, 100]))
