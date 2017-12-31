@@ -8,4 +8,4 @@ function bai160(a) {
     }
     return 0;
 }
-console.log(bai160([12, 14, 2004, 2005, -0.5, -0, 6]))
+console.log(bai160([12, 14, 2004, 2005, -0.5, -0.6]))
