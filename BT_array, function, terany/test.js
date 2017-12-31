@@ -1,3 +1,4 @@
-var points = [40, 100, 1, 5, 25, 10];
-b = points.sort(function(a, b){return a-b});
-console.log(b)
+let a = [1,2,3]
+let b = a.concat(4)
+c = a.parseFloat(a)
+console.log(c)
