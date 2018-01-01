@@ -10,6 +10,7 @@ function TimSoHangChuc5(n) {
     return 0;
 }
 a = []
+
 function bai203(a) {
     let sum = 0;
     for (let i = 0; i <= a.length; i++) {
