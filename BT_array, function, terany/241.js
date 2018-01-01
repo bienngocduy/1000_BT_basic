@@ -10,4 +10,4 @@ function bai241(a) {
     }
     return flag;
 }
-console.log(bai241([0,0, 15, 25, 3, 3,0]))
+console.log(bai241([0,15, 25, 3, 3,0]))
