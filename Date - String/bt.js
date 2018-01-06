@@ -8,7 +8,7 @@ function Week_of_day(weekday) {
     if (weekday === last_week_day) {
         console.log('weekend')
     }
-    else{
+    else {
         result = weekday;
         console.log(result)
     }
