@@ -1,4 +1,4 @@
-weekday1 = ''
+weekday = ''
 function Week_of_day(weekday) {
     full_day = 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'
     last_week_day = 'Saturday, Sunday'
@@ -9,8 +9,8 @@ function Week_of_day(weekday) {
         console.log('weekend')
     }
     else {
-        result = weekday;
+        result = weekday.replace(/[+,]/g, ',');
         console.log(result)
     }
 }
-Week_of_day('Saturday, Sunday')
+Week_of_day('Monday+ Tuesday, Wednesday')
