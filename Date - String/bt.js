@@ -1,15 +1,16 @@
-
-function Week_of_day(weekday1) {
-    weekday1 = ''
+weekday1 = ''
+function Week_of_day(weekday) {
     full_day = 'Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'
     last_week_day = 'Saturday, Sunday'
-    if (weekday1 == full_day) {
+    if (weekday === full_day) {
         console.log('everyday')
     }
-    if (weekday1 == last_week_day) {
+    if (weekday === last_week_day) {
         console.log('weekend')
     }
-    return weekday1
-    console.log(weekday1)
+    else{
+        result = weekday;
+        console.log(result)
+    }
 }
-Week_of_day('Monday, Tuesday, Wednesday')
+Week_of_day('Saturday, Sunday')
