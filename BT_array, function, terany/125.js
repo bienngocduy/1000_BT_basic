@@ -19,7 +19,7 @@ function check_primitive(n) {
 function bai125(a) {
     count = 0;
     for (let j = 0; j <= a.length; j++) {
-        if (check_primitive(a[j]) == true && a[j] < 100) {
+        if (check_primitive(a[j]) && a[j] < 100) {
             count++;
         }
     }
