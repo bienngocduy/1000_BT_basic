@@ -1,0 +1,82 @@
+122. 
+//tim gia tri lon nhat trong mang 1 chieu 
+
+let a = []; // ?? không cần thiết (error-1)
+
+function bai122(a) {
+    
+    // Add by Phong (error-2)
+    if (a == null || a == undefined) {
+        return undefined;
+    }
+
+    max_value = a[0];
+    for (let i = 0; i <= a.length; i++) {
+        if (a[i] > max_value) {
+            max_value = a[i]
+        }
+    }
+    return max_value;
+}
+
+console.log(bai122([1, 2, 3, 4, 100]))
+console.log(bai122([1]))
+console.log(bai122([1,-1]))
+console.log(bai122([]))
+console.log(bai122(null)) // fail => runtime exception
+
+123. Error same 122
+125.
+
+//dem so luong so nguyen to nho hon 100 trong mang 
+
+// Tên hàm nên như thế này
+function isPrimitive(n) {
+    // Các điều kiện đặc biệt hay exception luôn phải check trước
+    // Để đọc code dễ hiểu
+
+    // Điều kiện 1
+    if (n < 2 || n % 2 == 0) {
+        return false;
+    }
+
+    // Điều kiện 2
+    if (n == 2) {
+        return true;
+    }
+
+    for (let i = 3; i <= Math.sqrt(n); i += 2) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function bai125(a) {
+    // Kiểm tra điều kiện
+    if (a == null || a == undefined) {
+        // In log để dễ debug
+        // Khi chạy code mình chỉ thấy kết quả sai chứ ko biết sai ở đâu
+        // log để phát hiện nhanh lỗi
+        console.log("Exception: array = " + a);
+        return undefined;
+    }
+
+    var count = 0;
+    for (let j = 0; j <= a.length; j++) {
+        if (isPrimitive(a[j]) && a[j] < 100) {
+            count++;
+        }
+    }
+
+    // Phải có dòng cách để dễ nhìn
+    return count;
+}
+
+console.log(bai125([3, 9, 5, 4, 7, 4, 100]))
+
+126 + 127 + 132 + 133: Lỗi như 122 & 123
+
+135 + 136 + 137: Trả về undefined nếu ko có kết quả thay vì -1
